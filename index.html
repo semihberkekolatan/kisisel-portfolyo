@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Karakter kodlaması UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Mobil uyumluluk için viewport ayarı -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sayfa başlığı (tarayıcı sekmesinde görünür) -->
+    <title>Portfolyo - Semih Berke Kolatan</title>
+    <!-- SEO için açıklama -->
+    <meta name="description" content="Semih Berke Kolatan - Bilişim Sistemleri öğrencisi portfolyo sitesi">
+    <!-- CSS dosyası bağlantısı -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Üst menü bölümü -->
+    <header>
+        <nav>
+            <!-- Logo/site adı -->
+            <span class="logo">Yolculuğum</span>
+            <!-- Navigasyon menüsü -->
+            <ul>
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#yetenekler">Yetenekler</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana karşılama bölümü -->
+    <section class="hero" id="hero">
+        <!-- Profil fotoğrafı -->
+        <img src="profil.jpeg" alt="Semih Berke Kolatan" class="profile-photo">
+        <!-- Ana başlık -->
+        <h1>Merhaba, Ben Semih Berke Kolatan</h1>
+        <!-- Alt başlık -->
+        <p>Bilişim Sistemleri Ve Teknolojileri 2.Sınıf Öğrencisiyim</p>
+    </section>
+
+    <!-- Hakkımda bölümü -->
+    <section class="about" id="hakkimda">
+        <h2>Hakkımda</h2>
+        <p>Kapadokya Üniversitesi öğrencisiyim. Oyun yazılımı ve uygulama yazılım alanında kendimi geliştiriyorum.</p>
+    </section>
+
+    <!-- Yetenekler bölümü -->
+    <section class="skills" id="yetenekler">
+        <h2>Yeteneklerim</h2>
+        <!-- Yetenekler listesi (grid düzeninde) -->
+        <ul class="skills-grid">
+            <!-- Her bir yetenek kartı -->
+            <li class="skill-item">
+                <h3>HTML</h3>
+                <p>Web Site Geliştiriciliği</p>
+            </li>
+            <li class="skill-item">
+                <h3>Unity</h3>
+                <p>Unity Tabanlı Klasik Oyun Geliştiriciliği</p>
+            </li>
+            <li class="skill-item">
+                <h3>Unreal Engine</h3>
+                <p>Unreal Engine Tabanlı Modern Oyun Geliştiriciliği</p>
+            </li>
+            <li class="skill-item">
+                <h3>C#</h3>
+                <p>İleri Seviye Programlama</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projeler bölümü -->
+    <section class="portfolio" id="projeler">
+        <h2>Projelerim</h2>
+        <!-- Proje kartları listesi -->
+        <ul class="portfolio-grid">
+            <!-- Proje 1 -->
+            <li class="project-card">
+                <img src="tübitak.jpg" alt="Proje 1">
+                <h3>Tübitak 2209</h3>
+                <p>Akıllı Sera Sistemi</p>
+            </li>
+            <!-- Proje 2 -->
+            <li class="project-card">
+                <img src="oyun geliştiricisi.png" alt="Oyun Geliştirme">
+                <h3>Oyun Geliştiriciliği</h3>
+                <p>God Of War Ve Elden Ring oyunlarında ekibimle birlikte çalıştım.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- İletişim formu bölümü -->
+    <section class="contact" id="iletisim">
+        <h2>İletişim</h2>
+        <!-- Başarı mesajı (JavaScript ile gösterilir) -->
+        <p class="success-message" id="msg">Mesajınız alındı!</p>
+        <!-- İletişim formu -->
+        <form id="form">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+            <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <!-- Alt bilgi bölümü -->
+    <footer>
+        <!-- Telif hakkı bilgisi -->
+        <p>&copy; Öğrenci No:24097002 | Kapadokya Üniversitesi</p>
+        <!-- Sosyal medya linkleri -->
+        <ul class="social-links">
+            <li><a href="mailto:semihberkekolatan@gmail.com">
+                <img src="gmail.jpeg" alt="Gmail">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/semihberkekolatan" target="_blank">
+                <img src="linkedln.jpeg" alt="LinkedIn">
+            </a></li>
+            <li><a href="https://www.instagram.com/semihberkekolatan/" target="_blank">
+                <img src="instagram.jpeg" alt="Instagram">
+            </a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript dosyası bağlantısı -->
+    <script src="script.js"></script>
+</body>
+</html>
