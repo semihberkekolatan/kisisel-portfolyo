@@ -1,0 +1,313 @@
+/* Genel Stiller */
+/* Tüm elementlerin margin, padding ve box-sizing sıfırla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body genel ayarları */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Satır yüksekliği */
+    color: #5D4037; /* Metin rengi (koyu kahverengi) */
+    background: #FFF8E1; /* Arka plan rengi (açık bej) */
+}
+
+/* Header ve Navigasyon */
+/* Üst menü arka plan ve pozisyon */
+header {
+    background: #6D4C41; /* Koyu kahverengi */
+    padding: 1rem 0;
+    position: sticky; /* Kaydırmada üstte sabit kalır */
+    top: 0;
+    z-index: 1000; /* En üstte görünsün */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Gölge efekti */
+}
+
+/* Navigasyon container */
+nav {
+    max-width: 1200px;
+    margin: 0 auto; /* Ortala */
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between; /* İki uca yasla */
+    align-items: center; /* Dikeyde ortala */
+}
+
+/* Logo stili */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navigasyon listesi */
+nav ul {
+    display: flex;
+    list-style: none; /* Madde işaretlerini kaldır */
+    gap: 2rem; /* Elemanlar arası boşluk */
+}
+
+/* Navigasyon linkleri */
+nav a {
+    color: #fff;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    transition: color 0.3s; /* Renk geçiş efekti */
+}
+
+/* Link hover efekti */
+nav a:hover {
+    color: #FFECB3; /* Açık sarı */
+}
+
+/* Hero Section */
+/* Ana karşılama bölümü */
+.hero {
+    background: linear-gradient(135deg, #A1887F, #8D6E63); /* Degrade arka plan */
+    color: white;
+    text-align: center;
+    padding: 100px 2rem;
+}
+
+/* Profil fotoğrafı */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Yuvarlak yap */
+    object-fit: cover; /* Fotoğrafı kırparak sığdır */
+    border: 5px solid white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /* Gölge */
+    margin-bottom: 2rem;
+}
+
+/* Hero başlık */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sections */
+/* Genel section padding */
+section {
+    padding: 80px 2rem;
+}
+
+/* Section başlıkları */
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #4E342E; /* Çok koyu kahverengi */
+}
+
+/* Hakkımda bölümü */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Yetenekler bölümü arka planı */
+.skills {
+    background: #FFECB3; /* Açık sarı */
+}
+
+/* Grid Layouts */
+/* Yetenekler ve projeler için grid düzeni */
+.skills-grid,
+.portfolio-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem; /* Kartlar arası boşluk */
+    list-style: none;
+}
+
+/* Yetenekler grid - otomatik sütun sayısı */
+.skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Projeler grid */
+.portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Cards */
+/* Yetenek ve proje kartları genel stil */
+.skill-item,
+.project-card {
+    background: #FFFBF0; /* Çok açık bej */
+    border-radius: 15px; /* Köşeleri yuvarla */
+    box-shadow: 0 3px 10px rgba(93, 64, 55, 0.15); /* Hafif gölge */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasyon */
+}
+
+/* Kartların hover efekti */
+.skill-item:hover,
+.project-card:hover {
+    transform: translateY(-10px); /* Yukarı kaldır */
+    box-shadow: 0 8px 20px rgba(93, 64, 55, 0.25); /* Gölgeyi artır */
+}
+
+/* Yetenek kartı içeriği */
+.skill-item {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Yetenek kartı başlığı */
+.skill-item h3 {
+    color: #8D6E63;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Proje kartı yapısı */
+.project-card {
+    overflow: hidden; /* Taşan içeriği gizle */
+}
+
+/* Proje kartı resmi */
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Resmi kırparak sığdır */
+}
+
+/* Proje kartı başlığı */
+.project-card h3 {
+    padding: 1rem 1.5rem 0.5rem;
+    color: #4E342E;
+}
+
+/* Proje kartı açıklaması */
+.project-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: #6D4C41;
+}
+
+/* İletişim */
+/* İletişim bölümü arka planı */
+.contact {
+    background: #FFECB3;
+}
+
+/* Başarı mesajı (gizli) */
+.success-message {
+    display: none; /* Başlangıçta gizli */
+    max-width: 500px;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    background: #7CB342; /* Yeşil */
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Başarı mesajı görünür */
+.success-message.show {
+    display: block;
+}
+
+/* İletişim formu */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #FFFBF0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(93, 64, 55, 0.15);
+}
+
+/* Form input ve textarea */
+form input,
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit; /* Body font'unu kullan */
+    font-size: 1rem;
+}
+
+/* Input focus efekti */
+form input:focus,
+form textarea:focus {
+    outline: none; /* Varsayılan dış çizgiyi kaldır */
+    border-color: #8D6E63; /* Kenarlık rengini değiştir */
+}
+
+/* Form gönder butonu */
+form button {
+    width: 100%;
+    padding: 1rem;
+    background: #8D6E63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; /* El işareti */
+    transition: background 0.3s; /* Arka plan geçiş efekti */
+}
+
+/* Buton hover efekti */
+form button:hover {
+    background: #6D4C41; /* Daha koyu kahverengi */
+}
+
+/* Footer */
+/* Alt bilgi bölümü */
+footer {
+    background: #6D4C41;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Sosyal medya linkleri */
+.social-links {
+    display: flex;
+    justify-content: center; /* Ortala */
+    gap: 1.5rem; /* Linkler arası boşluk */
+    list-style: none;
+    margin-top: 1rem;
+}
+
+/* Sosyal medya link hover efekti */
+.social-links a {
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Büyüt */
+}
+
+/* Sosyal medya ikonları */
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Yuvarlak yap */
+}
+
+/* Responsive */
+/* Mobil cihazlar için (768px ve altı) */
+@media (max-width: 768px) {
+    /* Navigasyonu dikey yap */
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Hero başlığını küçült */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    /* Grid'leri tek sütun yap */
+    .skills-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
