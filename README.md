@@ -26,13 +26,12 @@ portfolio/
 ├── script.js           # JavaScript dosyası
 ├── README.md           # Proje dokümantasyonu
 │
-└── Görseller
-    ├── profil.jpeg
-    ├── tübitak.jpg
-    ├── oyun geliştiricisi.png
-    ├── gmail.jpeg
-    ├── linkedln.jpeg
-    └── instagram.jpeg
+├── profil.jpeg
+├── tübitak.jpg
+├── oyun geliştiricisi.png
+├── gmail.jpeg                  #Görseller
+├── linkedln.jpeg
+└── instagram.jpeg
 ```
 
 ##  Özellikler
