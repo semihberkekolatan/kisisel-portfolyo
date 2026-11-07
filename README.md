@@ -105,6 +105,3 @@ portfolio/
 ##  Lisans
 
 Bu proje eğitim amaçlı geliştirilmiştir.
-
-## Çalışma Linki
-file:///C:/Users/ACER/Desktop/Html/123/index.html
